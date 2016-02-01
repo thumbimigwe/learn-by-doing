@@ -21,10 +21,12 @@
 //    // code to run on server at startup
 //  });
 //}
+//console.log("Hello world");
 
 
 
 
 
+Playerlist = new Mongo.Collection('players');
 
-console.log("Hello world");
+
