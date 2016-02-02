@@ -27,7 +27,7 @@ def self_descriptive(num):
     str2=''
     for i in n1:
         count=0
-        for j in n1: 
+        for j in n1:
             if j==str(val):
                 #print j,val
                 count+=1
