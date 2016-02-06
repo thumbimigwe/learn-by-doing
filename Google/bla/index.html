@@ -1,0 +1,62 @@
+<link rel="import" href="../topeka-elements/category-images.html">
+<link rel="import" href="../core-icon/core-icon.html">
+
+<polymer-element name="my-element">
+
+  <template>
+    <style>    
+      :host {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      #section1 {
+        left: 0px;
+        top: 140px;
+        position: absolute;
+        background-color: rgb(255, 255, 141);
+      }
+      #core_icon {
+        height: 256px;
+        width: 256px;
+        z-index: 100;
+      }
+      #section {
+        box-sizing: border-box;
+        width: 420px;
+        height: 630px;
+        left: 260px;
+        top: 20px;
+        position: absolute;
+        background-color: rgb(255, 255, 141);
+      }
+      #div {
+        box-sizing: border-box;
+        position: relative;
+        height: 150px;
+        width: 150px;
+        color: rgb(255, 255, 255);
+        font-size: 100px;
+        background-color: rgb(255, 235, 59);
+      }
+    </style>
+    <section id="section1" class="top" flex layout horizontal center center-justified hero hero-id="top">
+      <core-icon icon="category-images:knowledge" id="core_icon" cross-fade-delayed designmeta="topeka-image"></core-icon>
+    </section>
+    <section id="section" layout vertical center center-justified>
+      <div id="div" hero layout vertical center center-justified>
+        <span id="span">+8</span>
+      </div>
+    </section>
+  </template>
+
+  <script>
+
+    Polymer({
+      
+    });
+
+  </script>
+
+</polymer-element>
